@@ -34,7 +34,8 @@ jobs:
             --region ap-northeast-2 \
             build s3://fe-37-aemaaeng-s3 \
             --delete
-        working-directory: ../
+        working-directory: ./my-agora-states-client
 
 
         # aws s3 sync ./dist s3://2021-cvi-dev/ --acl bucket-owner-full-control
+        # --delete (boolean) Files that exist in the destination but not in the source are deleted during sync.
